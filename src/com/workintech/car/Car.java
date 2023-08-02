@@ -1,4 +1,4 @@
-package com.workintech;
+package com.workintech.car;
 
 import java.util.Objects;
 
@@ -42,16 +42,19 @@ public class Car {
         return cylinders == car.cylinders && Objects.equals(name, car.name);
     }
 
-    public void startEngine() {
-        System.out.println(getClass().getSimpleName() + " engine is starting.");
+    public String startEngine() {
+        String result = getClass().getSimpleName() + " engine is starting.";
+        return result;
     }
 
-    public void accelerate() {
-        System.out.println(getClass().getSimpleName() + " car is accelerating.");
+    public String accelerate() {
+        String result = getClass().getSimpleName() + " is accelerating.";
+        return result;
     }
 
-    public void breake() {
-        System.out.println(getClass().getSimpleName()+ " car is breaking.");
+    public String brake() {
+        String result = getClass().getSimpleName() + " is breaking.";
+        return result;
     }
 
 }
